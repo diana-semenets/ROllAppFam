@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+$fontFamily: "Inter";
+$fontSize: 20px; // основний розмір шрифта
+
+// Основные цвета
+$mainColor: #fff; // колір шрифта
+$secondColor: #24201F;
+$fontColor: #F1E1D4;
+
+.wrapper {    
+    min-height: 100%;
+    margin: 0 auto;
+    font-size: $fontSize;
+    font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    font-family: "Inter", sans-serif;
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto;
+	}
+}
+
+//-------------------------
+.header {
+    &__container {
+        margin: 20px 45px 53px;
+        padding: 5px 116px 5px 84px;
+        background-color: $secondColor;
+        border-radius: 45px;
+        color:$fontColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+    &__social {
+        max-width: 158px;
+        margin-right: 33px;
+        display: inline-flex;
+        justify-content: space-between;
+        gap: 19px;
+        &-link {
+            display: flex;
+            align-items: center;
+            a img {
+                display: block;
+            }
+        }
+    }
+    &__lang {
+        button {
+            background-color: $secondColor;
+            border: none;
+        }        
+    }
+}
+.hidden {
+    display: none;
+}
+.dropdown__item-hidden {
+    display: none;
+}
+
+//-------------------------
+
+.logo {
+    width: 259px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img {
+    display: block;
+}
+.logo-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+//-------------------------
+.main {
+    &__container {
+        max-width: 1242px;
+        margin: 0 auto 100px;
+        background-image: url('../img/home-background.png');
+        background-image: url('../img/main-img.png');
+        background-color: $secondColor;
+        border-radius: 40px;
+        color: $mainColor;
+    }
+    &__content {
+        max-width: 695px;
+        padding: 91px 0 132px 89px;
+       
+    }
+    &__subtitle {
+        margin-bottom: 15px;        
+    }
+    &__title {
+        margin-bottom: 53px;
+        font-weight: 700;
+        font-size: 75px;
+    }
+    &__btn {
+        width: 310px;
+        height: 66px;
+        border-radius: 35px;
+        border: 3px solid $mainColor;
+        background: $mainColor;
+        color: $secondColor;
+        a {
+            font-weight: 700;
+            font-size: 25px;
+            color: $secondColor;
+        }
+        &:hover {
+            background-color: $secondColor;            
+            border: 2px solid $mainColor;
+            a {
+                color: $mainColor;
+            }
+        }
+    }
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 40px;
+}
+//-------------------------
+.blog {
+    background-color: $secondColor;
+    &__container {
+        padding: 28px;
+        color: $mainColor;
+        background-image: url('../img/blog-img.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    &__title {
+        max-width: 910px;
+        margin-left: 100px;
+        padding-bottom: 20px;       
+        border-bottom: 3px solid $mainColor;
+    }
+    &__news {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 20px;
+        row-gap: 65px;
+    }
+    &__link-more {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.card {
+    max-width: 490px;
+    border-radius: 35px;
+    img {
+        width: 100%;
+    }
+    &-title {
+        padding: 23px 10px 0;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    &-text {
+        padding: 0 10px;
+    }
+}
+
+//-------------------------
+.footer {
+    background-color: $secondColor;
+    &__container {
+        max-width: 1242px;
+        margin: 0 auto;
+        padding: 23px 0 0 0;                
+        color: $mainColor;
+    }
+    &__logo {
+        margin: 0 auto;
+        padding-bottom: 33px;
+    }
+    &__content {
+       margin: 0 45px;
+        padding: 15px 0 40px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px solid $mainColor;
+    }
+    &__rights {
+        text-align: end;
+        font-weight: 700;
+        &-title {        
+         font-size: 30px;
+        }
+        &-text {            
+            font-size: 18px;
+        }
+    }    
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 19px;        
+    }
+}
+
+//------------adaptive-------------
+
+@media (max-width:991.98px) {
+    .header__container {
+        margin: 20px 20px 53px;
+    }
+    .main__container {
+        margin: 0 20px 50px;
+    }
+    .footer__content {
+        margin: 0 20px;
+    }
+}
+@media (max-width:767.98px) {
+    .header__container {
+        padding: 0 30px 0 0;
+    }
+    .header__logo .logo-title {
+        display: none;
+    }
+    .header__social {
+        margin-right: 15px;
+        gap: 10px;
+    }
+    .main__content {
+        padding: 80px 0 132px 50px;
+    }
+    .main__title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 28px;
+    }
+    .blog__title {
+        margin-left: 0;
+    }
+}
+@media (max-width:479.98px) {
+    .main__content {
+        padding: 40px 0 40px 30px;
+    }
+    .subtitle {
+        font-weight: 600;
+        font-size: 22px;
+      }
+      .main__title {
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 48px;
+      }
+      .main__btn {
+        width: 220px;
+        height: 44px;
+        a {
+            font-size: 18px;
+        }
+      }
+    .blog__link-more {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .card-title {
+        
+        font-weight: 600;
+        font-size: 24px;
+    .footer__rights {
+        font-weight: 600;
+        text-align: start;
+    }
+    .footer__rights-title {
+        font-size: 24px;
+    }
+    .footer__rights-text {
+        font-size: 12px;
+      }
+
+}

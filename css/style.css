@@ -320,6 +320,7 @@ a {
   .blog__container {
     padding-left: 20px;
     background-size: 50%;
+    background-position-x: 130%;
   }
   .blog__link-more {
     font-weight: 600;

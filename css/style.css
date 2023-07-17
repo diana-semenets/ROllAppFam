@@ -104,6 +104,10 @@ a {
 .main__content {
   max-width: 695px;
   padding: 91px 0 132px 89px;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  position: relative;
 }
 .main__subtitle {
   margin-bottom: 15px;
@@ -112,6 +116,9 @@ a {
   margin-bottom: 53px;
   font-weight: 700;
   font-size: 75px;
+  animation: animation 1s ease;
+  animation-delay: 1.5s;
+  position: relative;
 }
 .main__btn {
   width: 310px;
@@ -137,6 +144,8 @@ a {
 .subtitle {
   font-weight: 700;
   font-size: 40px;
+  position: relative;
+  animation: animation 1s ease;
 }
 
 .blog {
@@ -222,6 +231,14 @@ a {
   gap: 19px;
 }
 
+@keyframes move {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 @media (max-width: 991.98px) {
   .header__container {
     margin: 20px 20px 53px;

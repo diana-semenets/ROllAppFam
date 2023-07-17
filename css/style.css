@@ -36,7 +36,8 @@ a {
 }
 
 .header__container {
-  margin: 20px 45px 53px;
+  max-width: 1335px;
+  margin: 20px auto 53px;
   padding: 5px 116px 5px 84px;
   background-color: #24201F;
   border-radius: 45px;
@@ -82,6 +83,9 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.logo a {
+  display: block;
+}
 
 .logo-img {
   display: block;
@@ -90,6 +94,7 @@ a {
 .logo-title {
   font-size: 30px;
   font-weight: 600;
+  color: #F1E1D4;
 }
 
 .main__container {
@@ -124,8 +129,8 @@ a {
   width: 310px;
   height: 66px;
   border-radius: 35px;
-  border: 3px solid #fff;
-  background: #fff;
+  border: 3px solid #F1E1D4;
+  background: #F1E1D4;
   color: #24201F;
 }
 .main__btn a {
@@ -135,7 +140,7 @@ a {
 }
 .main__btn:hover {
   background-color: #24201F;
-  border: 2px solid #fff;
+  border: 2px solid #F1E1D4;
 }
 .main__btn:hover a {
   color: #fff;
@@ -144,6 +149,7 @@ a {
 .subtitle {
   font-weight: 700;
   font-size: 40px;
+  color: #F1E1D4;
   position: relative;
   animation: animation 1s ease;
 }
@@ -162,7 +168,7 @@ a {
   max-width: 910px;
   margin-left: 100px;
   padding-bottom: 20px;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #F1E1D4;
 }
 .blog__news {
   margin-top: 40px;
@@ -177,6 +183,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
+  color: #F1E1D4;
 }
 
 .card {
@@ -190,6 +197,7 @@ a {
   padding: 23px 10px 0;
   font-weight: 700;
   font-size: 30px;
+  color: #F1E1D4;
 }
 .card-text {
   padding: 0 10px;
@@ -213,11 +221,11 @@ a {
   padding: 15px 0 40px;
   display: flex;
   justify-content: space-between;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #F1E1D4;
 }
 .footer__rights {
   text-align: end;
-  font-weight: 700;
+  color: #F1E1D4;
 }
 .footer__rights-title {
   font-size: 30px;

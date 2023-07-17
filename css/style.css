@@ -270,6 +270,9 @@ a {
   .header__lang-title img {
     width: 45px;
   }
+  .main__container {
+    margin: 0 20px 20px;
+  }
   .main__content {
     padding: 40px 0 40px 30px;
   }

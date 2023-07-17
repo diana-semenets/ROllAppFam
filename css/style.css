@@ -258,10 +258,13 @@ a {
   }
 }
 @media (max-width: 479.98px) {
+  .header__container {
+    margin: 20px 20px 20px;
+  }
   .logo-img {
     width: 55px;
   }
-  .header__social-link a img {
+  .header__social-link a img, .footer__social-link a img {
     width: 30px;
   }
   .header__lang-title img {
@@ -286,6 +289,10 @@ a {
   .main__btn a {
     font-size: 18px;
   }
+  .blog__container {
+    padding-left: 20px;
+    background-size: 50%;
+  }
   .blog__link-more {
     font-weight: 600;
     font-size: 24px;
@@ -299,9 +306,12 @@ a {
     text-align: start;
   }
   .footer__rights-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .footer__rights-text {
     font-size: 12px;
+  }
+  .footer__social {
+    gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

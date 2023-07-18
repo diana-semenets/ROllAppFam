@@ -105,6 +105,7 @@ a {
   background-color: #24201F;
   border-radius: 40px;
   color: #fff;
+  background-position: top;
 }
 .main__content {
   max-width: 695px;
@@ -121,9 +122,6 @@ a {
   margin-bottom: 53px;
   font-weight: 700;
   font-size: 75px;
-  animation: animation 1s ease;
-  animation-delay: 1.5s;
-  position: relative;
 }
 .main__btn {
   width: 310px;
@@ -132,6 +130,9 @@ a {
   border: 3px solid #F1E1D4;
   background: #F1E1D4;
   color: #24201F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main__btn a {
   font-weight: 700;
@@ -201,6 +202,48 @@ a {
 }
 .card-text {
   padding: 0 10px;
+}
+
+.main-page__container {
+  max-width: 1242px;
+  margin: 0 auto 100px;
+  background-image: url("../img/home-background.png");
+  background-color: #24201F;
+  border-radius: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+.main-page__box {
+  background-image: url("../img/blog-img.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.main-page__content {
+  max-width: 1040px;
+  padding: 29px 0 40px 89px;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  position: relative;
+}
+.main-page__title {
+  font-weight: 700;
+  font-size: 75px;
+}
+
+.blog-page {
+  background-color: #24201F;
+}
+.blog-page__container {
+  max-width: 1036px;
+  margin: 0 auto;
+  padding: 43px 20px;
+}
+.blog-page__text {
+  margin-top: 37px;
+  margin-bottom: 100px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .footer {

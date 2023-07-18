@@ -228,6 +228,7 @@ a {
   color: #F1E1D4;
 }
 .footer__rights-title {
+  font-weight: 700;
   font-size: 30px;
 }
 .footer__rights-text {
@@ -331,13 +332,14 @@ a {
     font-size: 24px;
   }
   .footer__rights {
-    font-weight: 600;
     text-align: start;
   }
   .footer__rights-title {
+    font-weight: 400;
     font-size: 20px;
   }
   .footer__rights-text {
+    font-weight: 400;
     font-size: 12px;
   }
   .footer__social {
